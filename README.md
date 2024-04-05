@@ -201,3 +201,18 @@ public class Main {
         }
     }
 }
+# 11
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double[] temperatura = new double[10];
+        double sum = 0;
+        Scanner input = new Scanner(System.in);
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Preencha com a temperatura da região " + (i + 1) + ": ");
+            temperatura[i] = input.nextDouble();
+            sum += temperatura[i];
+        } double mediatemperatura = sum / 10;
+        System.out.println("Temperatura média das regiões: " + mediatemperatura);
+    }
+}
